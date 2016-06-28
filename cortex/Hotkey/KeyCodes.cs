@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-
+// ReSharper disable IdentifierTypo
 // ReSharper disable InconsistentNaming
 
 namespace Cortex.Hotkey

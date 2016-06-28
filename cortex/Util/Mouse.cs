@@ -6,13 +6,13 @@ namespace Cortex.Util
     public class Mouse
     {
 
-        public static System.Windows.Point GetMousePositionWinForms()
+        public static Point GetMousePositionWinForms()
         {
             System.Drawing.Point point = System.Windows.Forms.Control.MousePosition;
-            return new System.Windows.Point(point.X, point.Y);
+            return new Point(point.X, point.Y);
         }
 
-        public static System.Windows.Point? GetMousePositionScreenWpf(Window window)
+        public static Point? GetMousePositionScreenWpf(Window window)
         {
             Point? point = null;
             var presentationSource = PresentationSource.FromVisual(window);

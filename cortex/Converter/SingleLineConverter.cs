@@ -12,7 +12,7 @@ namespace Cortex.Converter
             if (str != null)
             {
                 var pos = str.IndexOf('\n');
-                return (pos > 0) ? str.Substring(0, pos) : str;
+                return pos > 0 ? str.Substring(0, pos) : str;
             }
             return null;
 

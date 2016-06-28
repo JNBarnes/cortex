@@ -24,9 +24,14 @@ namespace Cortex.InterOp
         private static IntPtr GetClassLongPtr(IntPtr hWnd, int nIndex)
         {
             if (IntPtr.Size == 4)
-                return new IntPtr((long)NativeMethods.GetClassLong32(hWnd, nIndex));
+            {
+                return new IntPtr(NativeMethods.GetClassLong32(hWnd, nIndex));
+            }
             else
+            {
                 return NativeMethods.GetClassLong64(hWnd, nIndex);
+            }
+                
         }
 
 
